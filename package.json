@@ -1,0 +1,28 @@
+{
+    "name": "node-js-hw-1",
+    "version": "1.0.0",
+    "description": "CLI Contacts app",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/akymenko-m/node-js-hw-1.git"
+    },
+    "author": "Maria <dafnarianna@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/akymenko-m/node-js-hw-1/issues"
+    },
+    "homepage": "https://github.com/akymenko-m/node-js-hw-1#readme",
+    "devDependencies": {
+        "nodemon": "^2.0.22"
+    },
+    "dependencies": {
+        "commander": "^10.0.0",
+        "shortid": "^2.2.16"
+    }
+}
