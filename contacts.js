@@ -20,8 +20,8 @@ async function getContactById(contactId) {
         const data = JSON.parse(response);
 
         const contact = data.find((el) => el.id === contactId);
-        if (contact === undefined) {
-            return "You don't have this contact";
+        if (!contact) {
+            return null;
         }
 
         return contact;

@@ -20,7 +20,13 @@ function invokeAction({ action, id, name, email, phone }) {
             break;
 
         case "get":
-            functions.getContactById(id).then((data) => console.log(data));
+            functions.getContactById(id).then((data) => {
+                if (!data) {
+                    console.log(`You don't have contact whith id ${id}.`);
+                    return;
+                }
+                console.log(data);
+            });
             break;
 
         case "add":
